@@ -8,6 +8,18 @@ body {
     background-position: center; /* Centraliza a imagem */
 }
 
+.header-image {
+    width: 100%;
+    height: 1900px; /* Define a altura da imagem */
+    overflow: hidden; /* Esconde partes da imagem que excedem a área definida */
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorcer */
+}
+
 header {
     background-color: rgba(51, 51, 51, 0.8); /* Fundo semitransparente para melhor legibilidade */
     color: white;
@@ -56,4 +68,28 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+
+#contato {
+    text-align: center;
+}
+
+.telefones {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.5rem;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.telefones a {
+    margin: 0;
+    text-decoration: none;
+    color: #333;
+}
+
+.telefones a:hover {
+    text-decoration: underline;
 }
