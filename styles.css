@@ -137,6 +137,18 @@ footer {
     margin-top: 0.5rem;
 }
 
+.social-media p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .header-image {
