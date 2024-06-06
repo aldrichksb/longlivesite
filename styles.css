@@ -1,16 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('images/background.jpg'); /* Caminho para a imagem de fundo */
-    background-size: cover; /* Cobre toda a tela */
-    background-repeat: no-repeat; /* Não repete a imagem */
-    background-position: center; /* Centraliza a imagem */
+
 }
 
 .header-image {
     width: 100%;
-    height: 1900px; /* Define a altura da imagem */
+    height: 100%; /* Define a altura da imagem */
     overflow: hidden; /* Esconde partes da imagem que excedem a área definida */
 }
 
@@ -25,6 +22,24 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+}
+
+header h1 {
+    font-family: 'Permanent Marker', sans-serif; /* Aplica a nova fonte */
+	background-color: #2c3e50;
+    font-size: 2.5rem; /* Ajusta o tamanho da fonte */
+    margin: 0;
+	color: black;
+	text-shadow: 2px 2px 0 #ff0000, -2px 2px 0 #ff0000, 2px -2px 0 #ff0000, -2px -2px 0 #ff0000; /* Adiciona a borda vermelha ao texto */
+	background-image: url('images/h1back.gif'); /* Substitua 'your-gif.gif' pelo nome do seu GIF */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    padding: 0rem; /* Adiciona padding para melhorar a legibilidade */
+    width: 100%; /* Garante que o fundo cubra toda a largura do h1 */
+	height: 100%;
+    margin: 0; /* Remove qualquer margem */
+    display: inline-block; /* Mantém o texto dentro do fundo */
 }
 
 section {
@@ -92,4 +107,65 @@ footer {
 
 .telefones a:hover {
     text-decoration: underline;
+}
+
+.bandas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas */
+    gap: 1rem;
+}
+
+.banda {
+    text-align: center;
+    margin: 1rem;
+}
+
+.banda img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0%;
+}
+
+.banda p {
+    margin: 0.5rem 0 0;
+    font-weight: bold;
+}
+
+.banda .descricao {
+    font-size: 0.9rem;
+    color: #800;
+    margin-top: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-image {
+        height: auto; /* Define a altura da imagem para dispositivos móveis */
+    }
+    
+    section {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+	.header h1{
+		width: 100%
+	}
+
+    .telefones {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+	
+	.banda img {
+        width: 100px;
+        height: 100px;
+    }
+	
+	.bandas-grid {
+        grid-template-columns: 1fr; /* Define uma coluna em dispositivos menores */
+    }
 }

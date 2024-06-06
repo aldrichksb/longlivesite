@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festival Long Live Rock in Roll</title>
     <link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="header-image">
-        <img src="images/header.jpg" alt="Festival de Música">
+        <img src="images/header.jpg" alt="Long Live Rock in Roll V">
     </div>
     <header>
         <h1>Festival Long Live Rock in Roll V</h1>
@@ -18,22 +21,62 @@
         <h2>Detalhes do Evento</h2>
         <p><strong>Data:</strong> 06 de Julho de 2024</p>
         <p><strong>Local:</strong> Clube Social Luziense. Rua Direita 335. Santa Luzia. MG</p>
-        <p>Venha participar do maior festival de música da cidade com shows incríveis e uma experiência única!</p>
+        <p>Venha participar do maior festival de rock de Santa Luzia!</p>
     </section>
 
     <section id="artistas">
-        <h2>Artistas Participantes</h2>
-        <ul>
-            <li>Artista 1</li>
-            <li>Artista 2</li>
-            <li>Artista 3</li>
-            <li>Artista 4</li>
-        </ul>
+        <h2>Bandas Participantes</h2>
+        <div class="bandas-grid">
+            <div class="banda">
+                    <img src="images/tons_tais.png" alt="Tons & Tais">
+                    <p>Tons & Tais</p>
+					<p class="descricao">O melhor do MPB</p>
+					<p class="descricao">15:00 h</p>
+            </div>
+            <div class="banda">
+                    <img src="images/saba_tributo.png" alt="Sabá Tributo">
+                    <p>Sabá Tributo</p>
+					<p class="descricao">Tributo Black Sabbath</p>
+					<p class="descricao">16:00 h</p>
+            </div>
+            <div class="banda">
+                    <img src="images/mr_scarecrow.png" alt="Mr. Scarecrow">
+                    <p>Mr. Scarecrow</p>
+					<p class="descricao">Rock Nacional e Internacional</p>
+					<p class="descricao">17:00 h</p>
+            </div>
+			<div class="banda">
+                    <img src="images/meronai.png" alt="Meronai">
+                    <p>Meronai</p>
+					<p class="descricao">Rock Autoral</p>
+					<p class="descricao">18:00 h</p>
+            </div>
+            <div class="banda">
+                    <img src="images/in_rock.png" alt="In Rock">
+                    <p>In Rock</p>
+					<p class="descricao">Rainbow e Deep Purple</p>
+					<p class="descricao">20:00 h</p>
+            </div>
+            <div class="banda">
+                    <img src="images/heartbreaker.png" alt="Heartbreaker">
+                    <p>Heartbreaker</p>
+					<p class="descricao">Tributo Led Zeppelin</p>
+					<p class="descricao">21:00 h</p>
+            </div>
+            <div class="banda">
+                    <img src="images/rocknoisy.png" alt="RockNoisy">
+                    <p>RockNoisy</p>
+					<p class="descricao">Rock Nacional e Internacional</p>
+					<p class="descricao">22:00 h</p>
+            </div>
+        </div>
     </section>
 
     <section id="contato">
         <h2>Informações de Contato</h2>
-        <p>Email: contato@festivaldemusica.com</p>
+		<p>facebook.com/longlivernr</p>
+        <p>@SinteseMusicStore</p>
+		<p>Venda de Ingressos:</p>
         <div class="telefones">
             <a href="https://wa.me/5531991202322" target="_blank">(31) 99120-2322</a>
             <a href="https://wa.me/5531991972877" target="_blank">(31) 99197-2877</a>
@@ -41,10 +84,11 @@
             <a href="https://wa.me/5531996012450" target="_blank">(31) 99601-2450</a>
             <a href="https://wa.me/5531998484493" target="_blank">(31) 99848-4493</a>
         </div>
+	</section>
 	<a href="https://wa.me/5531991202322" class="whatsapp-float" target="_blank">
         <img src="images/whatsapp-icon.png" alt="WhatsApp" />
     </a>
-
+	<audio id="player" controls loop><source src="audio/long.mp3" type="audio/mp3"></audio>
     <script src="script.js"></script>
 </body>
 </html>
